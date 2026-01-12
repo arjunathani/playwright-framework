@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "@playwright/test": "^1.57.0"
+  },
+  "scripts": {
+    "test:test": "powershell -Command \"$env:ENV='test'; npx playwright test\"",
+    "test:prod": "powershell -Command \"$env:ENV='prod'; npx playwright test\""
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}
